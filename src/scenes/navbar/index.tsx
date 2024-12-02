@@ -17,8 +17,7 @@ const Navbar: React.FC<Props> = ({ selectedPage, setSelectPage }: Props) => {
             <div className={`${flexBeetween} fixed top-0 z-30 w-full py-6`}>
                 <div className={`${flexBeetween} mx-auto w-5/6`}>
                     <div className={`${flexBeetween} w-full gap-16`}>
-                        {/* Left Side */}
-                        <img src={Logo} alt="Logo"/>
+                        <img src={Logo} alt="Logo" width={113} height={24} />
                         {/* Rigth Side */}
                         <div className={`${flexBeetween} w-full`}>
                             <div className={`${flexBeetween} gap-8 text-sm`}>
