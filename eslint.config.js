@@ -16,10 +16,17 @@ export default [
         tsconfigRootDir: import.meta.dirname,
       },
     },
-    plugins: {
-      react: pluginReact,
-    },
+    extends: [
+      'eslint:recommended',
+      'plugin:@typescript-eslint/recommended',
+    ],
+
+    plugins: [
+      pluginReact,
+      tseslint,
+    ],
     rules: {
+      '@typescript-eslint/ban-ts-comment': 'error',
       ...pluginJs.configs.recommended.rules,
       ...tseslint.configs.recommended.rules,
       ...pluginReact.configs.recommended.rules,

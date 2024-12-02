@@ -17,11 +17,11 @@ const Navbar: React.FC<Props> = ({ selectedPage, setSelectPage }: Props) => {
             <div className={`${flexBeetween} fixed top-0 z-30 w-full py-6`}>
                 <div className={`${flexBeetween} mx-auto w-5/6`}>
                     <div className={`${flexBeetween} w-full gap-16`}>
+                        {/* Logo */}
                         <img src={Logo} alt="Logo" width={113} height={24} />
                         {/* Rigth Side */}
                         <div className={`${flexBeetween} w-full`}>
-                            <div className={`${flexBeetween} gap-8 text-sm`}>
-                                
+                            <div className={`${flexBeetween} gap-8 text-sm`}> 
                                 <Link 
                                     page = "Home"
                                     selectedPage={selectedPage}
@@ -42,9 +42,9 @@ const Navbar: React.FC<Props> = ({ selectedPage, setSelectPage }: Props) => {
                                     selectedPage={selectedPage}
                                     setSelectPage={setSelectPage}
                                 />
-
                             </div>
                             <div className={`${flexBeetween} gap-8`}>
+                                {/* Left Side */}
                                 <p>Sign In</p>
                                 <button>Become a Member</button>
                             </div>
