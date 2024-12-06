@@ -1,7 +1,7 @@
 import Navbar from "@/components/navbar";
+import Home from "@/components/home";
 import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/types";
-import { use } from "framer-motion/client";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
@@ -29,6 +29,7 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
+      <Home setSelectedPage={setSelectedPage}/>
     </div>
   );
 }
